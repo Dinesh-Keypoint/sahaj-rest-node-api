@@ -32736,7 +32736,13 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "x-region-id",
+										"value": "EastSinghbhum",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "{{api_gateway_url}}/reports/ReportList/_BillListDemandAccList?wardId=4&search=&meterNo=&pageno=1&pagesize=10",
 									"host": [
