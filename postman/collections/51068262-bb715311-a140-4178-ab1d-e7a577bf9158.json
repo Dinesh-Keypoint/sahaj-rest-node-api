@@ -32738,13 +32738,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/api/v1/reports/ReportList/_BillListDemandAccList?wardId=0&search=&meterNo=&pageno=1&pagesize=100",
+									"raw": "{{api_gateway_url}}/reports/ReportList/_BillListDemandAccList?wardId=4&search=&meterNo=&pageno=1&pagesize=10",
 									"host": [
-										"{{baseUrl}}"
+										"{{api_gateway_url}}"
 									],
 									"path": [
-										"api",
-										"v1",
 										"reports",
 										"ReportList",
 										"_BillListDemandAccList"
@@ -32752,7 +32750,7 @@
 									"query": [
 										{
 											"key": "wardId",
-											"value": "0"
+											"value": "4"
 										},
 										{
 											"key": "search",
@@ -32768,7 +32766,7 @@
 										},
 										{
 											"key": "pagesize",
-											"value": "100"
+											"value": "10"
 										}
 									]
 								}
