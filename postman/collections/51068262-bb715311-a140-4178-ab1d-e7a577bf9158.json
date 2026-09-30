@@ -32779,15 +32779,19 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "x-region-id",
+										"value": "EastSinghbhum",
+										"type": "text"
+									}
+								],
 								"url": {
-									"raw": "{{baseUrl}}/api/v1/reports/ReportList/ExportCumulativeReport?wardId=0&search=&meterNo=&linkId={{linkId}}",
+									"raw": "{{api_gateway_url}}/reports/ReportList/ExportCumulativeReport?wardId=4&search=&meterNo=&linkId=100273",
 									"host": [
-										"{{baseUrl}}"
+										"{{api_gateway_url}}"
 									],
 									"path": [
-										"api",
-										"v1",
 										"reports",
 										"ReportList",
 										"ExportCumulativeReport"
@@ -32795,7 +32799,7 @@
 									"query": [
 										{
 											"key": "wardId",
-											"value": "0"
+											"value": "4"
 										},
 										{
 											"key": "search",
@@ -32807,7 +32811,7 @@
 										},
 										{
 											"key": "linkId",
-											"value": "{{linkId}}"
+											"value": "100273"
 										}
 									]
 								},
