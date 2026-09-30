@@ -32791,7 +32791,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{api_gateway_url}}/reports/ReportList/ExportCumulativeReport?wardId=4&search=&meterNo=&linkId=100273",
+									"raw": "{{api_gateway_url}}/reports/ReportList/ExportCumulativeReport?wardId=0&search=&meterNo=&linkId=100273",
 									"host": [
 										"{{api_gateway_url}}"
 									],
@@ -32803,7 +32803,7 @@
 									"query": [
 										{
 											"key": "wardId",
-											"value": "4"
+											"value": "0"
 										},
 										{
 											"key": "search",
