@@ -32675,6 +32675,193 @@
 					"id": "51068262-04cc6eb6-1ec0-4730-8833-d780c9fd0ff3"
 				},
 				{
+					"name": "New Folder",
+					"item": [
+						{
+							"name": "BillListForDemandAccReport",
+							"id": "51068262-ab964ebc-b6d6-4907-a530-eadc3bc3bf86",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/reports/ReportList/BillListForDemandAccReport?wardId=0&search=&meterNo=&pageno=1&pagesize=100",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"reports",
+										"ReportList",
+										"BillListForDemandAccReport"
+									],
+									"query": [
+										{
+											"key": "wardId",
+											"value": "0"
+										},
+										{
+											"key": "search",
+											"value": ""
+										},
+										{
+											"key": "meterNo",
+											"value": ""
+										},
+										{
+											"key": "pageno",
+											"value": "1"
+										},
+										{
+											"key": "pagesize",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "_BillListDemandAccList",
+							"id": "51068262-975ead45-d3bb-4c97-aaea-9b82373eb908",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/reports/ReportList/_BillListDemandAccList?wardId=0&search=&meterNo=&pageno=1&pagesize=100",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"reports",
+										"ReportList",
+										"_BillListDemandAccList"
+									],
+									"query": [
+										{
+											"key": "wardId",
+											"value": "0"
+										},
+										{
+											"key": "search",
+											"value": ""
+										},
+										{
+											"key": "meterNo",
+											"value": ""
+										},
+										{
+											"key": "pageno",
+											"value": "1"
+										},
+										{
+											"key": "pagesize",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ExportCumulativeReport GET",
+							"id": "51068262-97c0b471-ed04-46cc-9634-92d0f1a130e5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/reports/ReportList/ExportCumulativeReport?wardId=0&search=&meterNo=&linkId={{linkId}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"reports",
+										"ReportList",
+										"ExportCumulativeReport"
+									],
+									"query": [
+										{
+											"key": "wardId",
+											"value": "0"
+										},
+										{
+											"key": "search",
+											"value": ""
+										},
+										{
+											"key": "meterNo",
+											"value": ""
+										},
+										{
+											"key": "linkId",
+											"value": "{{linkId}}"
+										}
+									]
+								},
+								"description": "Returns XLSX online, HTTP 201 JSON for a created offline request, or HTTP 409 JSON for a duplicate. Branch is determined by GA/linkId configuration. Set linkId to the report menu LinkId. Authenticated context supplies GAId and UserId."
+							},
+							"response": []
+						},
+						{
+							"name": "ExportCumulativeReport POST",
+							"id": "51068262-8485e7f7-6ef3-4d57-86c4-696c4a13e79b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "x-region-id",
+										"value": "EastSinghbhum",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"wardId\": 4,\n  \"search\": \"\",\n  \"meterNo\": \"\",\n  \"linkId\": 100273\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_gateway_url}}/reports/ReportList/ExportCumulativeReport",
+									"host": [
+										"{{api_gateway_url}}"
+									],
+									"path": [
+										"reports",
+										"ReportList",
+										"ExportCumulativeReport"
+									]
+								},
+								"description": "Returns XLSX online, HTTP 201 JSON for a created offline request, or HTTP 409 JSON for a duplicate. Branch is determined by GA/linkId configuration. Set linkId to the report menu LinkId. Authenticated context supplies GAId and UserId."
+							},
+							"response": []
+						}
+					],
+					"id": "51068262-f5166a07-37a5-4aac-9ab5-6fa1e63d4aa9"
+				},
+				{
 					"name": "health-check",
 					"id": "51068262-4f80165f-3fee-4240-bbaf-4febc5131ea5",
 					"protocolProfileBehavior": {
